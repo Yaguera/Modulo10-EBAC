@@ -29,7 +29,7 @@
                     <li><a href="#sobre-a-loja">Sobre</a></li>
                     <li><a href="#destaque">Em Destaque</a></li>
                     <li><a href="#promocoes">Promoções</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contatos">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -176,29 +176,29 @@
         </div>
     </section>
 
-    <section>
+    <section id="contatos">
         <div class="container">
             <h2>Entre em Contato</h2>
             <form>
                 <div class="form-campo">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome">
+                    <input name="nome" type="text" id="nome">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone">
+                    <input name="telefone" type="tel" id="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                    <input name="email" type="email" id="email">
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de Interesse</label>
-                    <input type="text" id="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculo-interesse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem"></textarea>
+                    <textarea id="mensagem" name="mensagem"></textarea>
                 </div>
                 <button type="submit">Enviar</button>
             </form>
@@ -231,6 +231,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
     <script src="main.js"></script>
 </body>
 
