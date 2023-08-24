@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -15,25 +15,27 @@ html{
     margin: 0 auto;
 }
 
-header {
+header,
+footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
 }
 
-header > .container {
+header>.container,
+footer>.container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
 }
 
-nav{
+nav {
     background-color: #280101;
     padding: 16px 0;
     display: none;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -53,12 +55,12 @@ nav li a {
     text-decoration: none;
 }
 
-.menu-hamburguer{
+.menu-hamburguer {
     width: 32px;
     cursor: pointer;
 }
 
-.menu-hamburguer span{
+.menu-hamburguer span {
     height: 2px;
     width: 100%;
     background-color: #fff;
@@ -66,46 +68,46 @@ nav li a {
     margin-bottom: 4px;
 }
 
-.container-flex{
+.container-flex {
     display: flex;
 }
 
-#sobre-a-loja img{
+#sobre-a-loja img {
     max-width: 400px;
     margin-right: 24px;
 }
 
-section{
+section {
     padding: 48px 0;
 }
 
-section h2{
+section h2 {
     margin-bottom: 16px;
 }
 
-.lista-veiculos{
+.lista-veiculos {
     flex-wrap: wrap;
 }
 
-.lista-veiculos li{
+.lista-veiculos li {
     list-style: none;
     max-width: 30%;
     margin-bottom: 24px;
 }
 
-.lista-veiculos li h3{
+.lista-veiculos li h3 {
     margin: 16px 0;
 }
 
-.lista-veiculos img{
+.lista-veiculos img {
     max-width: 100%
 }
 
-.item-central{
+.item-central {
     margin: 0 5%;
 }
 
-.lista-veiculos button{
+section button {
     width: 100%;
     display: block;
     background-color: #119759;
@@ -119,13 +121,51 @@ section h2{
     border-radius: 6px;
 }
 
-.price{
+.price {
     margin: 16px 0;
     display: block;
 
 }
 
-.price del{
+.price del {
     color: #ccc;
     font-size: 14px;
+}
+
+form {
+    width: 350px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer img {
+    width: 30px;
 }
