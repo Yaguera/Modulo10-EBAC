@@ -36,7 +36,7 @@ $(document).ready(function() {
             email:'Este campo é obrigatório'
         },
         submitHandler: function(form){
-            console.log(form);
+            submit(form);
         },
         invalidHandler: function(evento, validador){
             let camposIncorretos = validador.numberOfInvalids();
