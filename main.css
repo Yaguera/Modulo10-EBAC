@@ -78,11 +78,15 @@ nav li a {
 }
 
 section {
-    padding: 48px 0;
+    padding: 66px 0;
 }
 
 section h2 {
-    margin-bottom: 16px;
+    margin: 24px 0;
+}
+
+section p {
+    margin: 24px 0;
 }
 
 .lista-veiculos {

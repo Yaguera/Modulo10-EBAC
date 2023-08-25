@@ -22,6 +22,12 @@ $(document).ready(function() {
             },
             telefone: {
                 required: true
+            },
+            mensagem: {
+                required: true
+            },
+            veiculoInteresse: {
+                required: false
             }
         },
         messages: {
@@ -29,6 +35,28 @@ $(document).ready(function() {
             telefone:'Este campo é obrigatório',
             email:'Este campo é obrigatório'
         },
+        submitHandler: function(form){
+            console.log(form);
+        },
+        invalidHandler: function(evento, validador){
+            let camposIncorretos = validador.numberOfInvalids();
+            if(camposIncorretos){
+                alert(`Existem ${camposIncorretos} campos incorretos`)
+            }
+        }
+    })
+    $(".lista-veiculos button").click(function(){
+        const destino = $('#contatos');
+        const nome_veiculo = $(this).parent().find('h3').text();
+        const descricao = $(this).parent().find('p').text();
+
+        $('#veiculo-interesse').val(nome_veiculo)
+        $('#mensagem').val(descricao)
+
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 800)
     })
     
+
 })
